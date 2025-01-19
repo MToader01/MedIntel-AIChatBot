@@ -2,7 +2,7 @@ import os
 from datasets import  load_from_disk
 from train_model import ModelTrainer
 from data_processing import DataProcessor
-from use_charbot import Chatbot
+from use_chatbot import Chatbot
 
 if __name__ == "__main__":
     # Initialize the DataProcessor

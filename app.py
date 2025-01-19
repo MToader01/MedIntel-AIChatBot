@@ -1,12 +1,12 @@
 import streamlit as st
-from use_charbot import Chatbot  # Import the custom chatbot class
+from use_chatbot import Chatbot  # Import the custom chatbot class
 
 # Initialize Streamlit session state
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Initialize the custom chatbot
-custom_chatbot = Chatbot(model_path="./model_output")
+custom_chatbot = Chatbot()
 
 st.set_page_config(layout="wide")
 st.title("Custom Chatbot Demo")
